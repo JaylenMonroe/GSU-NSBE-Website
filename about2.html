@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSU NSBE</title>
+
+    <!--======== Favicon ========-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="NSBE GSU" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+    <!--======== Custom CSS Link ========-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!--======== Google Font Links ========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" aria-label="Go to Home Page">
+            <img src="./Photos/GNTL.png" alt="GSU NSBE Logo" />
+          </a>
+        </div>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="index.html" class="navbar-link" aria-label="Home Page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="member.html" class="navbar-link" aria-label="Member Page"
+                >Member</a
+              >
+            </li>
+            <li>
+              <a href="events.html" class="navbar-link" aria-label="Events Page"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="navbar-link"
+                aria-label="Gallery Page"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="about2.html"
+                class="navbar-link active"
+                aria-label="About Us Page"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn btn-donate" id="donate-button">Donate</button>
+        <div id="donate-modal" class="modal">
+          <div class="modal-content">
+            <h2>Donate to GSU NSBE</h2>
+            <p>Thank you for considering a donation to GSU NSBE!</p>
+            <p>We accept donations through the following payment options:</p>
+            <ul>
+              <li>
+                <a href="https://www.synovus.com/" target="_blank">Synovus</a>
+              </li>
+              <li>
+                <a href="https://cash.app/$NSBEgasouthern2024" target="_blank"
+                  >Cash App</a
+                >
+              </li>
+              <li>
+                <a href="https://venmo.com/Engineers2024" target="_blank"
+                  >Venmo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            class="menu-icon"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            aria-hidden="true"
+            class="close-icon"
+          ></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <!--============ About Us Section ============-->
+    <main>
+      <section class="title-section">
+        <div class="container">
+          <div class="title">
+            <h1><strong>About NSBE GSU</strong></h1>
+          </div>
+        </div>
+      </section>
+
+      <!--============ Welcome to NSBE GSU? ============-->
+      <section
+        class="section welcome-nsbe-gsu-section"
+        id="welcome-nsbe-gsu"
+        aria-label="Welcome to NSBE GSU"
+      >
+        <div class="container welcome-nsbe-gsu-grid">
+          <div class="welcome-nsbe-gsu-banner img-holder">
+            <img
+              src="./Photos/N23-24.png"
+              alt="NSBE GSU Photo"
+              class="img-cover"
+            />
+          </div>
+
+          <div class="welcome-nsbe-gsu-content">
+            <h1 class="h1 welcome-nsbe-gsu-title">
+              <strong>Welcome to NSBE at Georgia Southern University!</strong>
+            </h1>
+            <p class="welcome-nsbe-gsu-text">
+              <strong
+                >The Georgia Southern University Chapter of the National Society
+                of Black Engineers (NSBE GSU) was proudly revived during the
+                2023-2024 academic year after seven years of dormancy. Thanks to
+                the dedication of seven passionate individuals (Elijah Phillips,
+                Nancy Sarpong, Winnie Mwangi, Miles Rollins, Isaiah Lee, Amber
+                Lawrence, and Reasun Allah-U-Akbar) our chapter is back and
+                stronger than ever, committed to empowering and uplifting
+                members in STEM.</strong
+              >
+            </p>
+            <p class="welcome-nsbe-gsu-text">
+              <strong
+                >At NSBE GSU, we provide academic support through study
+                sessions, professional development with skill-building
+                workshops, and social connections via networking events. As a
+                member, you’ll also gain access to exclusive opportunities like
+                the Fall Regional Conference (FRC) and the Annual National
+                Convention perfect platforms for expanding your network and
+                enhancing your career prospects.</strong
+              >
+            </p>
+            <p class="welcome-nsbe-gsu-text">
+              <strong
+                >Join GSU NSBE today and become part of a vibrant community that
+                fosters excellence, achievement, and unity in STEM. Together,
+                we’re shaping the future!</strong
+              >
+            </p>
+            <a href="member.html" class="btn btn-join" aria-label="Join Now"
+              >Join</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--============ Mission & Vision ============-->
+      <section
+        class="section mission-vision-section"
+        id="mission-vision"
+        aria-label="Mission & Vision"
+      >
+        <div class="container mission-vision-grid">
+          <div class="mission-vision-content">
+            <h1 class="h1 mission-vision-title"><strong>Our Vision</strong></h1>
+            <p class="mission-vision-text">
+              <strong
+                >"We envision a world in which engineering is a mainstream word
+                in homes and communities of color, and all Black students can
+                envision themselves as engineers. In this world, Blacks exceed
+                parity in entering engineering fields, earning degrees, and
+                succeeding professionally."</strong
+              >
+            </p>
+
+            <h2 class="h2 mission-vision-title">
+              <strong>Our Mission</strong>
+            </h2>
+            <p class="mission-vision-text">
+              <strong
+                >"To increase the number of culturally responsible black
+                engineers who excel academically, succeed professionally and
+                positively impact the community</strong
+              >
+            </p>
+          </div>
+          <div class="mission-vision-banner img-holder">
+            <img
+              src="./Photos/GL3.png"
+              alt="NSBE GSU Photo"
+              class="img-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--============ About NSBE? ============-->
+      <section
+        class="section about-nsbe-section"
+        id="about"
+        aria-label="About NSBE"
+      >
+        <div class="container about-nsbe-section-grid">
+          <div class="about-nsbe-section-banner img-holder">
+            <img
+              src="./Photos/NSBEL.png"
+              alt="NSBE GSU Photo"
+              class="img-cover"
+            />
+          </div>
+
+          <div class="about-nsbe-section-content">
+            <h1 class="h1 about-nsbe-section-title">
+              <strong>About NSBE</strong>
+            </h1>
+            <p class="about-nsbe-section-text">
+              The National Society of Black Engineers (NSBE) was founded in 1975
+              by six students at Purdue University in West Lafayette, Indiana.
+              The students, who were all black engineering students, were
+              concerned about the low number of black engineers in the workforce
+              and the high dropout rate of black engineering students. They
+              decided to form a student organization to address these issues.
+            </p>
+            <p class="about-nsbe-section-text">
+              The first chapter of NSBE was called the Society of Black
+              Engineers (BSE). The BSE quickly grew in popularity and soon
+              chapters were established at other universities across the
+              country. In 1976, the BSE was renamed the National Society of
+              Black Engineers and incorporated as a 501(c)(3) nonprofit
+              organization.
+            </p>
+            <p class="about-nsbe-section-text">
+              Today, NSBE is one of the largest student-run organizations in the
+              United States. It has over 600 chapters and more than 24,000
+              members in the United States and abroad.
+            </p>
+            <a
+              href="https://nsbe.org/about/"
+              class="btn btn-more-about"
+              aria-label="Learn More"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--============ Meet the Executive Title ============-->
+
+      <div class="executive-board-title-container">
+        <h2 class="executive-board-title">Meet our Executive Board</h2>
+      </div>
+
+      <!--============ Meet the Executive Board ============-->
+      <section
+        class="executive-board-section"
+        id="executive-board"
+        aria-label="Executive Board"
+      >
+        <div class="executive-board-container">
+          <div class="executive-board-grid">
+            <!-- President -->
+            <div class="executive-board-card">
+              <img
+                src="./Photos/KorbynMPPC.png"
+                alt="Korbyn Fedd"
+                class="executive-board-img"
+              />
+              <h3 class="executive-board-card-title">
+                Korbyn Fedd<span style="font-weight: normal">President</span>
+              </h3>
+              <div class="executive-board-card-icon">
+                <a
+                  href="mailto:kf12343@georgiasouthern.edu"
+                  class="executive-board-link"
+                  aria-label="Email Korbyn Fedd"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/korbyn-fedd-27b8ab28a/"
+                  class="executive-board-link"
+                  aria-label="Visit NSBE GSU LinkedIn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Vice-President -->
+            <div class="executive-board-card">
+              <img
+                src="./Photos/OlaMPPC.png"
+                alt="Olaudo Victor-Ofoegbu"
+                class="executive-board-img"
+              />
+              <h3 class="executive-board-card-title">
+                Olaudo Victor-Ofoegbu<span style="font-weight: normal"
+                  >Vice-President</span
+                >
+              </h3>
+              <div class="executive-board-card-icon">
+                <a
+                  href="mailto:ov00422@georgiasouthern.edu"
+                  class="executive-board-link"
+                  aria-label="Email Ola Victor-Ofoegbu"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/olaudo/"
+                  class="executive-board-link"
+                  aria-label="Visit NSBE GSU LinkedIn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Secretary -->
+            <div class="executive-board-card">
+              <img
+                src="./Photos/JoshMPPC.png"
+                alt="Joshua Lee"
+                class="executive-board-img"
+              />
+              <h3 class="executive-board-card-title">
+                Joshua Lee<span style="font-weight: normal">Secretary</span>
+              </h3>
+              <div class="executive-board-card-icon">
+                <a
+                  href="mailto:jl31106@georgiasouthern.edu"
+                  class="executive-board-link"
+                  aria-label="Email Joshue Lee"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/joshua-lee-093a422ab/"
+                  class="executive-board-link"
+                  aria-label="Visit NSBE GSU LinkedIn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Treasurer -->
+            <div class="executive-board-card">
+              <img
+                src="./Photos/MilesMPPC.png"
+                alt="Miles Rouse"
+                class="executive-board-img"
+              />
+              <h3 class="executive-board-card-title">
+                Miles Rouse<span style="font-weight: normal">Treasurer</span>
+              </h3>
+              <div class="executive-board-card-icon">
+                <a
+                  href="mailto:mr26930@georgiasouthern.edu"
+                  class="executive-board-link"
+                  aria-label="Email Miles Rouse"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/miles-rouse-7a7371289/"
+                  class="executive-board-link"
+                  aria-label="Visit NSBE GSU LinkedIn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Senator -->
+            <div class="executive-board-card">
+              <img
+                src="./Photos/ChrisMPPC.png"
+                alt="Chris Galvin-Wright"
+                class="executive-board-img"
+              />
+              <h3 class="executive-board-card-title">
+                Chris Galvin-Wright<span style="font-weight: normal"
+                  >Senator</span
+                >
+              </h3>
+              <div class="executive-board-card-icon">
+                <a
+                  href="mailto:cg20679@georgiasouthern.edu"
+                  class="executive-board-link"
+                  aria-label="Email Chris Galvin-Wright"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/christopher-galvin-wright-819351269/"
+                  class="executive-board-link"
+                  aria-label="Visit NSBE GSU LinkedIn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Professional Delegate -->
+            <div class="executive-board-card">
+              <img
+                src="./Photos/AJMPPC.png"
+                alt="Aj Hernandez"
+                class="img-cover"
+              />
+              <h3 class="executive-board-card-title">
+                Aj Hernandez<span style="font-weight: normal"
+                  >Professional Delegate</span
+                >
+              </h3>
+              <div class="executive-board-card-icon">
+                <a
+                  href="mailto:ah37178@georgiasouthern.edu"
+                  class="executive-board-link"
+                  aria-label="Email Aj Hernandez"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/anthony-hernandez-03271b28a/"
+                  class="executive-board-link"
+                  aria-label="Visit NSBE GSU LinkedIn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Fundraising Chair -->
+            <div class="executive-board-card">
+              <img
+                src="./Photos/JonasMPPC.png"
+                alt="Jonas Adams"
+                class="executive-board-img"
+              />
+              <h3 class="executive-board-card-title">
+                Jonas Adams<span style="font-weight: normal"
+                  >Fundraising Chair</span
+                >
+              </h3>
+              <div class="executive-board-card-icon">
+                <a
+                  href="ja20340@georgiasouthern.edu"
+                  class="executive-board-link"
+                  aria-label="Email Jonas Adams"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/nsbegsu/"
+                  class="executive-board-link"
+                  aria-label="Visit NSBE GSU LinkedIn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- Public Relations Chair -->
+            <div class="executive-board-card">
+              <img
+                src="./Photos/JaylenMPPC (1).png"
+                alt="Jaylen Monroe"
+                class="executive-board-img"
+              />
+              <h3 class="executive-board-card-title">
+                Jaylen Monroe<br /><span style="font-weight: normal"
+                  >Public Relations Chair</span
+                >
+              </h3>
+              <div class="executive-board-card-icon">
+                <a
+                  href="mailto:jm59497@georgiasouthern.edu"
+                  class="executive-board-link"
+                  aria-label="Email Jaylen Monroe"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jaylenmonroe/"
+                  class="executive-board-link"
+                  aria-label="Visit NSBE GSU LinkedIn"
+                >
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--============ Meet the Chapter Advisors Title ============-->
+
+    <div class="executive-board-title-container">
+      <h2 class="executive-board-title">Chapter Advisors</h2>
+    </div>
+
+    <!--============ Meet our Chapter Advisors ============-->
+    <section
+      class="executive-board-section"
+      id="executive-board"
+      aria-label="Executive Board"
+    >
+      <div class="executive-board-container">
+        <div class="executive-board-grid">
+          <!-- Chapter Advisor #1 -->
+          <div class="executive-board-card">
+            <img
+              src="./Photos/KyraMPPC.png"
+              alt="Kyra Larry"
+              class="executive-board-img"
+            />
+            <h3 class="executive-board-card-title">
+              Kyra Larry<span style="font-weight: normal">Chapter Advisor</span>
+            </h3>
+            <div class="executive-board-card-icon">
+              <a
+                href="mailto:klarry@georgiasouthern.edu"
+                class="executive-board-link"
+                aria-label="Email Kyra Larry"
+              >
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/klarryshrmcp/"
+                class="executive-board-link"
+                aria-label="Visit NSBE GSU LinkedIn"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a
+                href="https://ocpd.georgiasouthern.edu/staff/#kyra-larry-she-her-hers"
+                class="executive-board-link"
+                aria-label="Visit NSBE GSU LinkedIn"
+              >
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============ Footer ============-->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="index.html" class="logo" aria-label="Go to Home Page">
+              <img src="./Photos/GSUNSBElogoTRANS1.png" alt="GSU NSBE Logo" />
+            </a>
+            <p class="footer-text">
+              Dedicated to advancing diversity in STEM and empowering the next
+              generation of Black engineers to excel academically, succeed
+              professionally, and positively impact the community.
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Menu</p>
+            </li>
+            <li>
+              <a
+                href="index.html"
+                class="footer-link"
+                aria-label="Go to Home Page"
+              >
+                <span class="span">Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="member.html"
+                class="footer-link"
+                aria-label="Member Page"
+              >
+                <span class="span">Member</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="events.html"
+                class="footer-link"
+                aria-label="Events Page"
+              >
+                <span class="span">Events</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="footer-link"
+                aria-label="Gallery Page"
+              >
+                <span class="span">Gallery</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="about2.html"
+                class="footer-link"
+                aria-label="About Us Page"
+              >
+                <span class="span">About Us</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Socials</p>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/nsbegsu/"
+                class="footer-link"
+                aria-label="Visit NSBE GSU Instagram"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nsbegsu/"
+                class="footer-link"
+                aria-label="Visit NSBE GSU linkedIn"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <address class="address">
+                1332 Southern Dr, <br />
+                Statesboro, Georgia <br />
+                30458
+                <a
+                  href="https://maps.app.goo.gl/Ld8qQGGPTGNHPkYt7"
+                  class="address-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View on Google Maps</a
+                >
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:nsbe@georgiasouthern.edu" class="footer-link"
+                >nsbe@georgiasouthern.edu</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel: (706) 313-0083" class="footer-link"
+                >(706) 313-0083</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer footer-gsu">
+        <div class="footer-bottom">
+          <div class="container footer-gsu-container">
+            <p class="copyright footer-gsu-copyright">
+              &copy; <span id="currentYear"></span> NSBE GSU.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--============ Custom JS Link ============-->
+    <script src="main.js" defer></script>
+
+    <!--============ Ionicons Link ============-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSU NSBE</title>
+
+    <!--======== Favicon ========-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="NSBE GSU" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+    <!--======== Custom CSS Link ========-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!--======== Google Font Links ========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" aria-label="Go to Home Page">
+            <img src="./Photos/GNTL.png" alt="GSU NSBE Logo" />
+          </a>
+        </div>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="index.html" class="navbar-link" aria-label="Home Page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="member.html" class="navbar-link" aria-label="Member Page"
+                >Member</a
+              >
+            </li>
+            <li>
+              <a
+                href="events.html"
+                class="navbar-link active"
+                aria-label="Events Page"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="navbar-link"
+                aria-label="Gallery Page"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="about2.html"
+                class="navbar-link"
+                aria-label="About Us Page"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn btn-donate" id="donate-button">Donate</button>
+        <div id="donate-modal" class="modal">
+          <div class="modal-content">
+            <h2>Donate to GSU NSBE</h2>
+            <p>Thank you for considering a donation to GSU NSBE!</p>
+            <p>We accept donations through the following payment options:</p>
+            <ul>
+              <li>
+                <a href="https://www.synovus.com/" target="_blank">Synovus</a>
+              </li>
+              <li>
+                <a href="https://cash.app/$NSBEgasouthern2024" target="_blank"
+                  >Cash App</a
+                >
+              </li>
+              <li>
+                <a href="https://venmo.com/Engineers2024" target="_blank"
+                  >Venmo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            class="menu-icon"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            aria-hidden="true"
+            class="close-icon"
+          ></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <!--============ Page Title ============-->
+    <section class="title-section">
+      <div class="container">
+        <div class="title">
+          <h1>Our Events</h1>
+        </div>
+      </div>
+    </section>
+
+    <!--======== Google Calender ========-->
+    <section class="nsbe-calendar-section">
+      <div class="nsbe-calendar-container">
+        <div class="nsbe-calendar-text">
+          <h2 class="nsbe-section-title">Our Upcoming Events</h2>
+          <p class="nsbe-calendar-description">
+            Stay In the Know: Your Go-To Source for NSBE GSU and STEM Campus
+            Events! Stay informed on all updates by adding our Google Calendar
+            to yours. Don’t miss out on the latest schedule changes and event
+            details check out our Google Calendar today!
+          </p>
+        </div>
+        <div class="nsbe-google-calendar">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=nsbe%40georgiasouthern.edu&ctz=America%2FNew_York"
+            style="border: 0; width: 100%; max-width: 800px; height: 600px"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--======== Past Events Section ========-->
+    <section class="nsbe-past-events-section">
+      <div class="nsbe-past-events-container">
+        <h2 class="nsbe-section-title">Our Past Events</h2>
+        <div class="nsbe-past-events-grid">
+          <!-- Event Card 1 -->
+          <div class="nsbe-past-event-card">
+            <img
+              src="./Photos/NSBE23-24-4.png"
+              alt="Event 1 Photo"
+              class="nsbe-past-event-photo"
+            />
+            <div class="nsbe-past-event-info">
+              <h3 class="nsbe-past-event-title">First Community Service</h3>
+              <p class="nsbe-past-event-description">
+                Our first community service event was a milestone as we
+                officially came back as a recognized organization on the Georgia
+                Southern campus. On September 2nd, 2023, during the football
+                game against The Citadel, we had the opportunity to contribute
+                to the game day experience at Allen E. Paulson Stadium.
+                Together, we helped with concessions, parking, and other
+                essential tasks that ensured a smooth and successful event. This
+                was a fantastic way for us to kick off the 2023–2024 school year
+                and reaffirm our commitment to giving back through volunteering
+                at GSU football games.
+              </p>
+              <p class="nsbe-past-event-location">
+                Location: Allen E. Paulson Stadium
+              </p>
+              <p class="nsbe-past-event-date">Date: September 2nd, 2023</p>
+            </div>
+          </div>
+
+          <!-- Event Card 2 -->
+          <div class="nsbe-past-event-card">
+            <img
+              src="./Photos/NSBE23-24-7.png"
+              alt="Event 3 Photo"
+              class="nsbe-past-event-photo"
+            />
+            <div class="nsbe-past-event-info">
+              <h3 class="nsbe-past-event-title">Better World Books Drive</h3>
+              <p class="nsbe-past-event-description">
+                The Better World Books Drive served as the first major incentive
+                event of the NSBE eboard for the 2023-2024 school year. This
+                book drive took place in various locations across campus,
+                running from November 13th to December 1st. Collection boxes
+                were strategically placed throughout Georgia Southern’s campus,
+                making it easy for students, faculty, and staff to donate both
+                new and gently used books of all sizes. The event was a
+                tremendous success, with countless books collected and donated
+                to the Better World Books organization. It provided a meaningful
+                opportunity for our community to give back, helping those in
+                need access books.
+              </p>
+              <p class="nsbe-past-event-location">
+                Location: Various Locations on Georgia Southern Campus
+              </p>
+              <p class="nsbe-past-event-date">
+                Date: November 13th - December 1st, 2023
+              </p>
+            </div>
+          </div>
+
+          <!-- Event Card 3 -->
+          <div class="nsbe-past-event-card">
+            <img
+              src="./Photos/NSBE23-24-11.png"
+              alt="Event 3 Photo"
+              class="nsbe-past-event-photo"
+            />
+            <div class="nsbe-past-event-info">
+              <h3 class="nsbe-past-event-title">
+                Organization Basketball Tournament
+              </h3>
+              <p class="nsbe-past-event-description">
+                Our organization joined a basketball tournament at the GSU
+                Recreation Activity Center, marking one of the first events
+                during NSBE Week at GSU. This event was a fantastic opportunity
+                to network and have fun with our fellow NSBE members, as well as
+                collaborate with other campus groups like NAACP, BSA, and more.
+                Beyond the game, this event focused on giving back to the
+                community by collecting canned goods for a meaningful cause.
+                Thanks to everyone's participation, we surpassed our goal,
+                collecting over 300 cans! It was a perfect blend of teamwork,
+                fun, and philanthropy, bringing our organization together for a
+                shared purpose.
+              </p>
+              <p class="nsbe-past-event-location">
+                Location: Recreation Activity Center (RAC)
+              </p>
+              <p class="nsbe-past-event-date">Date: February 23, 2024</p>
+            </div>
+          </div>
+
+          <!-- Event Card 4 -->
+          <div class="nsbe-past-event-card">
+            <img
+              src="./Photos/NSBE24-25-6.png"
+              alt="Event 4 Photo"
+              class="nsbe-past-event-photo"
+            />
+            <div class="nsbe-past-event-info">
+              <h3 class="nsbe-past-event-title">NSBE Resume Workshop</h3>
+              <p class="nsbe-past-event-description">
+                We partnered with the office of Career and Professional
+                Development (OCPD) to host a resume workshop before the Fall
+                2024 Career Showcase week to prepare our members for the
+                upcoming career fair. This event was a huge success, with many
+                members attending and receiving valuable feedback on their
+                resumes. The workshop covered essential topics like resume
+                formatting, content, and tailoring resumes to specific job
+                opportunities. It was a fantastic opportunity for our members to
+                enhance their professional skills and gain valuable insights
+                from career experts.
+              </p>
+              <p class="nsbe-past-event-location">
+                Location: Engineering Research Building (ERB)
+              </p>
+              <p class="nsbe-past-event-date">Date: September 10th, 2024</p>
+            </div>
+          </div>
+          <!-- Event Card 5 -->
+        </div>
+      </div>
+    </section>
+
+    <!--======== Future Events ========-->
+    <!--<section class="future-events">
+      <div class="future-events-content">
+        <h2 class="section-title">Our Future Events</h2>
+        <p></p>
+      </div>
+    </section>-->
+
+    <!--============ Footer ============-->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="index.html" class="logo" aria-label="Go to Home Page">
+              <img src="./Photos/GSUNSBElogoTRANS1.png" alt="GSU NSBE Logo" />
+            </a>
+            <p class="footer-text">
+              Dedicated to advancing diversity in STEM and empowering the next
+              generation of Black engineers to excel academically, succeed
+              professionally, and positively impact the community.
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Menu</p>
+            </li>
+            <li>
+              <a
+                href="index.html"
+                class="footer-link"
+                aria-label="Go to Home Page"
+              >
+                <span class="span">Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="member.html"
+                class="footer-link"
+                aria-label="Member Page"
+              >
+                <span class="span">Member</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="events.html"
+                class="footer-link"
+                aria-label="Events Page"
+              >
+                <span class="span">Events</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="footer-link"
+                aria-label="Gallery Page"
+              >
+                <span class="span">Gallery</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="about2.html"
+                class="footer-link"
+                aria-label="About Us Page"
+              >
+                <span class="span">About Us</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Socials</p>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/nsbegsu/"
+                class="footer-link"
+                aria-label="Visit NSBE GSU Instagram"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nsbegsu/"
+                class="footer-link"
+                aria-label="Visit NSBE GSU linkedIn"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <address class="address">
+                1332 Southern Dr, <br />
+                Statesboro, Georgia <br />
+                30458
+                <a
+                  href="https://maps.app.goo.gl/Ld8qQGGPTGNHPkYt7"
+                  class="address-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View on Google Maps</a
+                >
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:nsbe@georgiasouthern.edu" class="footer-link"
+                >nsbe@georgiasouthern.edu</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel: (706) 313-0083" class="footer-link"
+                >(706) 313-0083</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer footer-gsu">
+        <div class="footer-bottom">
+          <div class="container footer-gsu-container">
+            <p class="copyright footer-gsu-copyright">
+              &copy; <span id="currentYear"></span> NSBE GSU.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--============ Custom JS Link ============-->
+    <script src="main.js" defer></script>
+
+    <!--============ Ionicons Link ============-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

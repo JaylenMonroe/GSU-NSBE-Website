@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSU NSBE</title>
+
+    <!--======== Favicon ========-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="NSBE GSU" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+    <!--======== Custom CSS Link ========-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!--======== Google Font Links ========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" aria-label="Go to Home Page">
+            <img src="./Photos/GNTL.png" alt="GSU NSBE Logo" />
+          </a>
+        </div>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="index.html" class="navbar-link" aria-label="Home Page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="member.html"
+                class="navbar-link active"
+                aria-label="Member Page"
+                >Member</a
+              >
+            </li>
+            <li>
+              <a href="events.html" class="navbar-link" aria-label="Events Page"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="navbar-link"
+                aria-label="Gallery Page"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="about2.html"
+                class="navbar-link"
+                aria-label="About Us Page"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn btn-donate" id="donate-button">Donate</button>
+        <div id="donate-modal" class="modal">
+          <div class="modal-content">
+            <h2>Donate to GSU NSBE</h2>
+            <p>Thank you for considering a donation to GSU NSBE!</p>
+            <p>We accept donations through the following payment options:</p>
+            <ul>
+              <li>
+                <a href="https://www.synovus.com/" target="_blank">Synovus</a>
+              </li>
+              <li>
+                <a href="https://cash.app/$NSBEgasouthern2024" target="_blank"
+                  >Cash App</a
+                >
+              </li>
+              <li>
+                <a href="https://venmo.com/Engineers2024" target="_blank"
+                  >Venmo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            class="menu-icon"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            aria-hidden="true"
+            class="close-icon"
+          ></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <!--============ Page Title ============-->
+    <section class="title-section">
+      <div class="container">
+        <div class="title">
+          <h1><strong>Become a Member </strong></h1>
+        </div>
+      </div>
+    </section>
+
+    <!--============ Looking to Join Section ============-->
+    <section
+      class="looking-to-loin-section"
+      id="looking-to-loin-nsbe-gsu"
+      aria-label="Joining NSBE GSU"
+    >
+      <!--=== Image Container ===-->
+      <div class="looking-to-loin-container">
+        <div class="looking-to-loin-image-container">
+          <img src="./Photos/GL3.png" alt="NSBE GSU Photo" class="img-cover" />
+        </div>
+
+        <!--=== Text Content Container ===-->
+        <div class="looking-to-loin-text-content">
+          <h2 class="looking-to-loin-section-title">
+            Looking to join NSEB GSU?
+          </h2>
+          <p class="looking-to-loin-section-text">
+            We are thrilled that you are interested in joining the Georgia
+            Southern University (GSU) NSBE chapter, a vibrant community of
+            aspiring Black engineers and STEM professionals. By becoming a
+            member of NSBE GSU, you are unlocking doors to countless
+            opportunities for personal and professional growth, as well as
+            forging impactful connections within the field.
+          </p>
+          <p class="looking-to-loin-section-text">
+            We invite you to discover the many benefits and possibilities that
+            await you as a part of our esteemed organization. Join us as we work
+            together on the exciting path toward academic excellence,
+            professional development, and community engagement.
+          </p>
+          <p class="looking-to-loin-section-text">
+            As a member of NSBE GSU, you will have exclusive access to
+            opportunities such as the Fall Regional Conference (FRC) and the
+            Annual National Convention. These events showcase the passion and
+            dedication of Black students and professionals in STEM, offering
+            countless avenues for career advancement, including job placements,
+            co-ops, internships, mentorships, and valuable networking
+            connections. Not only will these events enrich your academic and
+            professional journey, but they also celebrate the spirit of unity
+            within the NSBE community, making them truly memorable experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--============ Meet the Executive Title ============-->
+
+    <div class="section-title-container">
+      <h2 class="section-title">Follow the steps below:</h2>
+      <p class="section-text-1">
+        To join the Georgia Southern Society of Black Engineers (NSBE GSU) as a
+        member for the 2024-25 academic year, please follow the steps outlined
+        below.
+      </p>
+      <p class="section-text-1">
+        Instructions for the National Society of Black Engineers are also
+        detailed.
+      </p>
+    </div>
+
+    <!--============ How to Join Section ============-->
+    <section
+      class="steps-to-join"
+      id="steps-join"
+      aria-label="Steps to Join NSBE GSU"
+    >
+      <div class="container">
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <img src="./Photos/Step1.png" alt="Step 1" class="img-cover" />
+            <h3 class="h3 card-title">Becoming an Active Member</h3>
+            <p class="card-text">
+              Attend meetings, introduce yourself, and complete the Member
+              Metrics form to get registered and stay involved!
+            </p>
+            <div>
+              <a href="https://forms.gle/DG5XfVeC25mCY14f6">
+                <button class="btn btn-join">Sign Up</button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <img
+              src="./Photos/Step2.png"
+              alt="Step 2: Pay Chapter Dues"
+              class="img-cover"
+            />
+            <h3 class="h3 card-title">Pay Chapter Dues</h3>
+            <p class="card-text">
+              To complete your chapter membership, please pay your ($30) chapter
+              dues via Cashapp or Venmo using the button below.
+            </p>
+            <div>
+              <a href="https://cash.app/$NSBEgasouthern2024">
+                <button class="btn btn-join">Cash App</button>
+              </a>
+              <a href="https://venmo.com/Engineers2024">
+                <button class="btn btn-join">Venmo</button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <img
+              src="./Photos/Step3.png"
+              alt="Step 3: Pay National Dues"
+              class="img-cover"
+            />
+            <h3 class="h3 card-title">Pay National Dues</h3>
+            <p class="card-text">
+              Join the official NSBE and pay your National Dues ($15) using your
+              GSU student email. Returning members must also renew their annual
+              membership!
+            </p>
+            <div>
+              <a href="https://nsbe.org/collegiate/">
+                <button class="btn btn-join">Pay National Dues</button>
+              </a>
+              <a href="https://youtu.be/80mdWKkOItI?si=zkLf4ebFnRLT7zpH">
+                <button class="btn btn-join">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                  Tutorial
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <img src="./Photos/Step4.png" alt="Step 4" class="img-cover" />
+            <h3 class="h3 card-title">Follow Our Socials</h3>
+            <p class="card-text">
+              Stay updated with everything NSBE GSU by following us on social
+              media!
+            </p>
+            <div>
+              <a href="https://linktr.ee/gsunsbe">
+                <button class="btn btn-join">Stay Connected</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--============ Footer ============-->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="index.html" class="logo" aria-label="Go to Home Page">
+              <img src="./Photos/GSUNSBElogoTRANS1.png" alt="GSU NSBE Logo" />
+            </a>
+            <p class="footer-text">
+              Dedicated to advancing diversity in STEM and empowering the next
+              generation of Black engineers to excel academically, succeed
+              professionally, and positively impact the community.
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Menu</p>
+            </li>
+            <li>
+              <a
+                href="index.html"
+                class="footer-link"
+                aria-label="Go to Home Page"
+              >
+                <span class="span">Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="member.html"
+                class="footer-link"
+                aria-label="Member Page"
+              >
+                <span class="span">Member</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="events.html"
+                class="footer-link"
+                aria-label="Events Page"
+              >
+                <span class="span">Events</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="footer-link"
+                aria-label="Gallery Page"
+              >
+                <span class="span">Gallery</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="about2.html"
+                class="footer-link"
+                aria-label="About Us Page"
+              >
+                <span class="span">About Us</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Socials</p>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/nsbegsu/"
+                class="footer-link"
+                aria-label="Visit NSBE GSU Instagram"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nsbegsu/"
+                class="footer-link"
+                aria-label="Visit NSBE GSU linkedIn"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <address class="address">
+                1332 Southern Dr, <br />
+                Statesboro, Georgia <br />
+                30458
+                <a
+                  href="https://maps.app.goo.gl/Ld8qQGGPTGNHPkYt7"
+                  class="address-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View on Google Maps</a
+                >
+              </address>
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:nsbe@georgiasouthern.edu" class="footer-link"
+                >nsbe@georgiasouthern.edu</a
+              >
+            </li>
+
+            <li class="footer-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel: (706) 313-0083" class="footer-link"
+                >(706) 313-0083</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer footer-gsu">
+        <div class="footer-bottom">
+          <div class="container footer-gsu-container">
+            <p class="copyright footer-gsu-copyright">
+              &copy; <span id="currentYear"></span> NSBE GSU.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--============ Custom JS Link ============-->
+    <script src="main.js" defer></script>
+
+    <!--============ Ionicons Link ============-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

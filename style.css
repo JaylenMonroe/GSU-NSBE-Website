@@ -1,0 +1,1343 @@
+:root {
+  /* ========= COLORS ========= */
+  --Georgia-Southern-Blue: hsl(217, 100%, 30%); /* Primary blue */
+  --Gold: hsl(42, 70%, 50%); /* Gold accent */
+  --White: hsl(0, 0%, 100%); /* White for background and text */
+  --Dark-Blue: hsl(217, 80%, 20%); /* Darker blue for contrast or text */
+  --Light-Gray: hsl(
+    0,
+    0%,
+    95%
+  ); /* Light gray for background or subtle elements */
+  --carcoal_10: hsla(0, 0%, 0%, 0.1);
+  --carcoal_15: hsla(0, 0%, 0%, 0.15);
+  --carcoal_20: hsla(0, 0%, 0%, 0.2);
+
+  /*======= typography ========*/
+
+  --ff-spartan: "League Spartan", sans-serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+
+  --fs-1: 3.6rem;
+  --fs-2: 2.4rem;
+  --fs-3: 2rem;
+  --fs-4: 1.8rem;
+  --fs-5: 1.7rem;
+
+  --fw-600: 600;
+  --fw-500: 500;
+
+  /*======== spacing =========*/
+
+  --section-padding: 35px;
+
+  /*======= shadow =======*/
+
+  --shadow-1: 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  --shadow-2: 0 10px 15px -5px var(--carcoal_20);
+  --shadow-3: 0 10px 25px -3px var(--carcoal_20);
+  --shadow-4: 0 0 3px var(--carcoal_15);
+  --shadow-5: 0 20px 25px -5px var(--carcoal_10),
+    0 10px 10px -5px var(--carcoal_10);
+
+  /*======== border radius ========*/
+
+  --radius-16: 16px;
+  --radius-12: 12px;
+  --radius-6: 6px;
+  --radius-4: 4px;
+
+  /*======== transition =========*/
+
+  --transition: 0.25s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+/*======== Reset Styles =========*/
+* *::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*======== Base Styles =========*/
+
+html {
+  font-family: var(--ff-inter);
+  font-size: 62.5%;
+  color: var(--Dark-Blue);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--fs-5);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* ============ General Button Enhancements ============*/
+.btn {
+  background-color: var(--Dark-Blue);
+  color: var(--White);
+  font-weight: var(--fw-500);
+  max-width: max-content;
+  padding: 12px 32px;
+  transition: var(--transition);
+  border: 4px solid transparent;
+  text-align: center;
+  font-size: var(--fs-5);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--Gold);
+  color: var(--White);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-3);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--Gold);
+  transform: scale(1.05);
+}
+
+/* ============ Navigation Styles  ============*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.navbar-link {
+  color: var(--Dark-Blue);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  padding: 10px 15px;
+  transition: var(--transition);
+}
+
+.navbar-link.active,
+.navbar-link:hover {
+  color: var(--Georgia-Southern-Blue);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px var(--container-padding);
+}
+
+/*======== Typography =========*/
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+/*======== Common Element Styles =========*/
+a,
+img,
+span,
+label,
+input,
+select,
+button,
+ion-icon {
+  display: block;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input,
+select,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+select {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* ============ Layout Classes ============*/
+.container {
+  padding-inline: var(--container-padding);
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+/* ============ Button Enhancements (General) ============*/
+.btn:is(:focus-visible, :hover) {
+  cursor: pointer;
+}
+
+.about-btn,
+.btn-join,
+.btn-donate,
+.btn-about {
+  margin: 20px auto;
+  display: inline-block;
+  font-family: var(--ff-montserrat);
+}
+
+/* ============ Donate Button ============*/
+.btn-donate {
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: var(--fs-4);
+}
+
+.btn-donate:hover {
+  background-color: var(--Georgia-Southern-Blue);
+  transform: scale(1.1);
+  box-shadow: var(--shadow-1);
+}
+
+/* ============ Donate Button Styling Modal (Pressed On) ============ */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--carcoal_20);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--Light-Gray);
+  padding: var(--section-padding);
+  box-shadow: var(--shadow-3);
+  border-radius: var(--radius-12);
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-4);
+  line-height: 1.5;
+  margin: var(--section-padding);
+  font-weight: var(--fw-600);
+}
+
+.modal-content h2 {
+  margin-top: var(--section-padding);
+  color: var(--Dark-Blue);
+  font-size: var(--fs-2);
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: var(--section-padding);
+  color: var(--Dark-Blue);
+  font-size: var(--fs-5);
+  text-align: center;
+}
+
+.modal-content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content ul li {
+  align-items: center;
+  margin: 10px;
+}
+
+.modal-content ul li a {
+  color: var(--Gold);
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 18px;
+  font-weight: var(--fw-600);
+}
+
+.modal-content ul li a:hover {
+  color: var(--Georgia-Southern-Blue);
+}
+
+.modal-content button {
+  background-color: var(--Georgia-Southern-Blue);
+  color: var(--White);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius-6);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.modal-content button:hover {
+  background-color: var(--Gold);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  animation: fadeIn var(--transition);
+}
+
+/* ============ Logo Styles ============*/
+.logo {
+  position: relative;
+  z-index: 2;
+}
+
+.logo img {
+  width: 250px;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+/* ============ Join Button ============*/
+.btn-join {
+  padding: 12px 28px;
+  border-radius: 50px;
+  background-color: var(--Gold);
+  font-weight: var(--fw-600);
+  transition: var(--transition);
+}
+
+.btn-join:hover {
+  background-color: var(--Dark-Blue);
+  color: var(--Gold);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-2);
+}
+
+/* ============ Menu Icon Styles ============*/
+.nav-toggle-btn {
+  display: none;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle-btn ion-icon {
+  font-size: 2.4rem;
+  color: var(--Dark-Blue);
+  --ionicon-stroke-width: 40px;
+}
+
+.nav-toggle-btn .close-icon {
+  display: none;
+}
+
+.nav-toggle-btn.active .close-icon {
+  display: none;
+}
+
+.nav-toggle-btn.active .menu-icon {
+  display: none;
+}
+
+.nav-toggle-btn.active .close-icon {
+  display: block;
+}
+
+/* ============ Title Section Styles ============*/
+.title-section {
+  padding: var(--section-padding) 0;
+  background-color: var(--Light-Gray);
+  text-align: center;
+}
+
+.title {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title h1 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-600);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.title h2 {
+  font-size: var(--fs-3);
+  font-weight: var(--fw-500);
+  color: var(--Dark-Blue);
+  line-height: 1.4;
+}
+
+/* ====== (Main Content) More About Button ====== */
+.btn-about {
+  padding: 12px 28px;
+  border-radius: 50px;
+  background-color: var(--Georgia-Southern-Blue);
+  color: var(--White);
+  transition: var(--transition);
+}
+
+.btn-about:hover {
+  background-color: var(--Gold);
+  color: var(--Dark-Blue);
+  box-shadow: var(--shadow-5);
+  transform: scale(1.05);
+}
+
+/* ============ What is GSU NSBE? (Main Page) ============ */
+.about-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us-text-content {
+  text-align: center;
+}
+
+.about-us-title {
+  font-size: var(--fs-2);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 10px;
+  font-weight: var(--fw-600);
+}
+
+.about-us-text {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  line-height: 1.6;
+  margin-bottom: 10px;
+  max-width: 1000px;
+  font-weight: var(--fw-600);
+}
+
+.about-us-text-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gsu-nsbe-about-us-more-about-btn {
+  padding: 12px 28px;
+  border-radius: 50px;
+  background-color: var(--Georgia-Southern-Blue);
+  color: var(--White);
+  transition: var(--transition);
+  margin-top: 20px;
+  font: var(--ff-popins);
+  font-weight: var(--fw-600);
+}
+
+.gsu-nsbe-about-us-more-about-btn:hover {
+  background-color: var(--Gold);
+  color: var(--Dark-Blue);
+  box-shadow: var(--shadow-5);
+  transform: scale(1.05);
+}
+
+.sponsors-section {
+  text-align: center;
+  padding: var(--section-padding);
+  background-color: var(--Light-Gray);
+  margin-top: 40px; /* Add spacing between sections */
+}
+
+/* ============ Sponsors Section Styling ============ */
+
+.sponsors-section {
+  text-align: center;
+  padding: var(--section-padding);
+  background-color: var(--Light-Gray);
+}
+
+.sponsors-section h2 {
+  font-size: var(--fs-2);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 10px;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-600);
+}
+
+.sponsors-section p {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  margin-bottom: 30px;
+  font-family: var(--ff-inter);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ============ Sponsors Grid Styling ============ */
+.sponsor-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.sponsor-img {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 30px;
+  margin: 15px;
+}
+
+.sponsor-img:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: var(--shadow-3);
+}
+
+/* ============ President's Message Section Styling ============ */
+
+.message-section {
+  padding: var(--section-padding);
+  background-color: var(--White);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.message-section h2 {
+  font-size: var(--fs-2);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 10px;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-600);
+}
+
+.message-section p {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  margin-bottom: 30px;
+  font-family: var(--ff-inter);
+  line-height: 1.6;
+}
+
+.message-section p strong {
+  font-weight: var(--fw-600);
+}
+
+.message-section .president {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.message-section .president img {
+  max-width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.message-section .president p {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  font-family: var(--ff-inter);
+  line-height: 1.6;
+}
+
+.message-section .president p strong {
+  font-weight: var(--fw-600);
+}
+
+/* ============ Looking to Loin Section ============ */
+.looking-to-loin-section {
+  padding: 80px 0;
+  background-color: var(--White);
+}
+
+.looking-to-loin-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.looking-to-loin-image-container {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.looking-to-loin-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-12);
+}
+
+.looking-to-loin-text-content {
+  width: 60%;
+}
+
+.looking-to-loin-section-title {
+  font-size: 36px;
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 30px;
+  font-weight: var(--fw-600);
+  text-align: center;
+}
+
+.looking-to-loin-section-text {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-600);
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ============ Join Section Title Enhancments ============ */
+.section-title-container {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--White);
+  border-radius: var(--radius-12);
+  margin: 40px auto;
+}
+
+.section-title-container h2.section-title {
+  font-size: 3.2rem;
+  font-weight: var(--fw-600);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title-container h2.section-title::after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 4px;
+  background-color: var(--Gold);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.section-title-container p.section-text-1 {
+  font-size: 1.8rem;
+  color: var(--Dark-Blue);
+  font-family: var(--ff-inter);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: var(--fw-600);
+}
+
+.section-title-container p.section-text-1 strong {
+  color: var(--Georgia-Southern-Blue);
+  font-weight: var(--fw-600);
+}
+
+/* ============ Steps to Join Section  ============ */
+.steps-to-join {
+  padding: var(-section-padding) 0;
+  background-color: var(--White);
+}
+
+.steps-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  flex: 1;
+  background-color: var(--Light-Gray);
+  padding: 20px;
+  border-radius: var(--radius-12);
+  box-shadow: var(--shadow-2);
+  text-align: center;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-3);
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+.step-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-6);
+}
+
+.step-card .card-title {
+  font-size: var(--fs-3);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 10px;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-600);
+}
+
+.step-card .card-text {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  font-family: var(--ff-inter);
+}
+
+.step-card .btn-join {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--Georgia-Southern-Blue);
+  color: var(--White);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.step-card .btn-join:hover {
+  background-color: var(--Gold);
+}
+
+ion-icon[name="youtube-outline"] {
+  color: var(--White);
+  font-size: 24px;
+  margin-right: 8px;
+  align-items: center;
+}
+
+.btn.btn-join {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.steps-to-join {
+  padding-bottom: 80px;
+}
+
+/* ============ NSBE Calendar Section Styling ============ */
+.nsbe-calendar-section {
+  padding: 80px 0;
+  background-color: var(--White);
+}
+
+.nsbe-calendar-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nsbe-calendar-text {
+  flex: 1;
+  max-width: 50%;
+  font-weight: bold;
+}
+
+.nsbe-section-title {
+  font-size: var(--fs-2);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 20px;
+  font-weight: var(--fw-600);
+}
+
+.nsbe-calendar-description {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  line-height: 1.6;
+}
+
+.nsbe-google-calendar {
+  flex: 1;
+  max-width: 50%;
+}
+
+.nsbe-google-calendar iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: var(--radius-12);
+  box-shadow: var(--shadow-3);
+}
+
+/* ============ NSBE Past Events Section Styling ============ */
+.nsbe-past-events-section {
+  padding: 80px 0;
+  background-color: var(--White);
+}
+
+.nsbe-past-events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nsbe-section-title {
+  font-size: var(--fs-2);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 20px;
+  font-weight: var(--fw-600);
+  text-align: center;
+}
+
+.nsbe-past-events-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nsbe-past-event-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--Light-Gray);
+  padding: 20px;
+  border-radius: var(--radius-12);
+  box-shadow: var(--shadow-2);
+}
+
+.nsbe-past-event-photo {
+  width: 420px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.nsbe-past-event-info {
+  flex: 1;
+  text-align: left;
+}
+
+.nsbe-past-event-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--Dark-Blue);
+  margin-bottom: 10px;
+}
+
+.nsbe-past-event-description {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--Dark-Blue);
+  margin-bottom: 20px;
+}
+
+.nsbe-past-event-location {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--Dark-Blue);
+  margin-bottom: 10px;
+}
+
+.nsbe-past-event-date {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--Dark-Blue);
+}
+
+/* ============ Gallery Styling & More  ============ */
+.gallery-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-12);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-3);
+}
+
+/* ============ Lightbox Styling ============ */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.lightbox .lb-image {
+  width: 80%;
+  height: auto;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox .lb-prev,
+.lightbox .lb-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lightbox .lb-prev {
+  left: 20px;
+}
+
+.lightbox .lb-next {
+  right: 20px;
+}
+
+.lightbox .lb-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ============ Button Styling ============ */
+.btn-join-our-sponsors {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--Georgia-Southern-Blue);
+  color: var(--White);
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-600);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow-2);
+  margin-top: 20px;
+}
+
+.btn-join-our-sponsors:hover {
+  background-color: var(--Gold);
+  color: var(--Dark-Blue);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-3);
+}
+
+/* ============ Welcome to NSBE GSU Section ============ */
+.welcome-nsbe-gsu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.welcome-nsbe-gsu-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-nsbe-gsu-banner img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: var(--radius-12);
+}
+
+.welcome-nsbe-gsu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-nsbe-gsu-title {
+  font-size: var(--fs-2);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.welcome-nsbe-gsu-text {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ============ Mission & Vission Section ============ */
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.mission-vision-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mission-vision-banner img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--radius-12);
+}
+
+.mission-vision-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mission-vision-title {
+  font-size: var(--fs-2);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.mission-vision-text {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ============ About NSEB Section ============ */
+.about-nsbe-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-nsbe-section-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-nsbe-section-banner img {
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  border-radius: var(--radius-12);
+}
+
+.about-nsbe-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-nsbe-section-title {
+  font-size: var(--fs-2);
+  color: var(--Georgia-Southern-Blue);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-nsbe-section-text {
+  font-size: var(--fs-5);
+  color: var(--Dark-Blue);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ============ About NSEB Section (Button) ============ */
+.about-nsbe-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-more-about {
+  margin-top: 20px;
+}
+
+/* ============ Executive Board Text ============ */
+
+.executive-board-title-container {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 40px 0;
+}
+
+.executive-board-title {
+  font-size: 4rem;
+  color: var(--Georgia-Southern-Blue);
+  margin: 0;
+  font-weight: bold;
+}
+
+/* ============ Executive Board Layout ============ */
+
+.executive-board-section {
+  padding: 40px 0;
+}
+
+.executive-board-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.executive-board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.executive-board-card {
+  text-align: center;
+  background-color: var(--Light-Gray); /* Card Background */
+  padding: 20px;
+  border-radius: var(--radius-12);
+  box-shadow: var(--shadow-2);
+  transition: var(--transition);
+}
+
+.executive-board-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-3);
+}
+
+.executive-board-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-6);
+  margin-bottom: 15px;
+}
+
+.executive-board-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.executive-board-card-title {
+  font-size: var(--fs-4);
+  color: var(--Dark-Blue);
+  margin-bottom: 2px;
+}
+
+.executive-board-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-top: auto;
+}
+
+.executive-board-link {
+  color: var(--Dark-Blue);
+  font-size: var(--fs-4);
+  transition: var(--transition);
+}
+
+.executive-board-link:hover {
+  color: var(--Gold);
+}
+
+.executive-board-link ion-icon {
+  font-size: 21px;
+}
+
+/* ============ Footer ============ */
+
+.footer {
+  background-color: var(--Dark-Blue);
+  color: var(--White);
+  padding-block: 60px;
+  width: 100%;
+  position: relative;
+}
+
+.footer .logo {
+  font-weight: var(--fw-500);
+  margin-block-end: 25px;
+}
+
+.footer-text {
+  line-height: 1.6;
+}
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-list-title {
+  color: var(--Gold);
+  font-weight: var(--fw-600);
+  letter-spacing: 1px;
+  margin-block-end: 25px;
+}
+
+.footer-list-title:not(:last-child) {
+  margin-block-end: 15px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition);
+}
+
+.footer-link ion-icon {
+  font-size: 14px;
+}
+
+.footer-link:is(:hover, :focus) {
+  opacity: 0.8px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-item:nth-child(2) {
+  align-items: flex-start;
+}
+
+.footer-list .footer-item:not(:last-child) {
+  margin-block-end: 25px;
+}
+
+.address {
+  line-height: 1.5;
+}
+
+.address-link {
+  color: var(--Light-Gray);
+  margin-block-start: 10px;
+  transition: var(--transition);
+}
+
+.address-link:is(:hover, :focus) {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  border-block-start: 1px solid var(--carcoal_20);
+  padding-block: 30px;
+  text-align: center;
+}
+
+.footer.footer-gsu
+  .footer-bottom
+  .container.footer-gsu-container
+  .copyright.footer-gsu-copyright {
+  display: inline;
+}
