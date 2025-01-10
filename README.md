@@ -3,3 +3,5 @@ This is the code I used to create the website for my NSBE chapter. It includes a
 It has taken me about a week to reach a point where I'm happy with the result and think it looks pretty good. I believe it's a solid effort, considering I've only been coding in HTML, CSS, and JavaScript for about one and a half to two weeks.
 
 I plan to continue working on this project and improving it as I grow as a frontend developer and expand my skills beyond HTML, CSS, and JavaScript. I’m excited to see how this site evolves in the coming months!
+
+Link to the website- https://nsbegsu.netlify.app/
